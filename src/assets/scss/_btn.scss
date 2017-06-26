@@ -1,0 +1,28 @@
+@import './variables';
+
+.btn {
+  background-color: transparent;
+  border: 1px solid $base-colour;
+  border-radius: 3rem;
+  color: $base-colour;
+  cursor: pointer;
+  font-size: .8125rem;
+  font-weight: 400;
+  height: 2rem;
+  line-height: 2rem;
+  min-width: 4rem;
+  padding: 0 .75rem;
+  text-align: center;
+  outline: none;
+  transition: all .15s ease-out;
+
+  &__default {
+    background-color: $base-colour;
+    border-color: transparent;
+    color: #fff;
+  }
+
+  &:hover, &:focus {
+    opacity: .8;
+  }
+}

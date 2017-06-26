@@ -1,0 +1,49 @@
+@import './variables';
+
+%label {
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: .475rem;
+}
+
+.input {
+  &__group {
+    margin-bottom: 1.125rem;
+
+    select, input, button {
+      outline: none;
+    }
+
+    select, input[type="text"] {
+      border: 1px solid $base-border-colour;
+      border-radius: $base-border-radius;
+      box-sizing: border-box;
+      color: $base-text-colour;
+      font-size: .875rem;
+      font-weight: 400;
+      line-height: 1.1;
+      padding: .5rem .75rem;
+      text-overflow: ellipsis;
+      transition: .15s;
+      width: 100%;
+
+      &:hover, &:focus {
+        border: 1px solid $base-colour;
+      }
+    }
+
+    &--discount {
+      display: flex;
+
+      input[type="text"] {
+        flex: 1;
+        margin-right: 1rem;
+      }
+
+      button {
+        margin-left: auto;
+      }
+    }
+  }
+}
